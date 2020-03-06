@@ -1,0 +1,29 @@
+modLoader="javafml" 
+loaderVersion="[31,)" 
+issueTrackerURL="" 
+
+[[mods]] 
+    modId="earthtojava" 
+    version="${jarVersion}-${version}" 
+    displayName="Earth to Java" 
+    updateJSONURL="" 
+    displayURL="" 
+    logoFile="" 
+    credits="" 
+    authors="VinnyStalck" 
+    description='''
+    Brings to Minecraft Java Editions, some of the features from Minecraft Earth mobile game.
+    '''
+[[dependencies.earth]] 
+    modId="forge" 
+    mandatory=true
+    versionRange="[31,)" 
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.earth]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"

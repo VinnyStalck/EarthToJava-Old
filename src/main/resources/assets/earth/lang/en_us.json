@@ -1,0 +1,19 @@
+{
+    "item.processit.iron_cluster_refined": "Refined Iron Cluster",
+
+    "item.processit.ruby": "Ruby",
+    "block.processit.ruby_block": "Block of Ruby",
+    
+    "item.processit.ruby_axe": "Ruby Axe",
+    "item.processit.ruby_pickaxe": "Ruby Pickaxe",
+    "item.processit.ruby_shovel": "Ruby Shovel",
+    "item.processit.ruby_hoe": "Ruby Hoe",
+    "item.processit.ruby_sword": "Ruby Sword",
+
+    "item.prcessit.ruby_helmet": "Ruby Helmet",
+    "item.prcessit.ruby_chestplate": "Ruby Chestplate",
+    "item.prcessit.ruby_leggings": "Ruby Leggings",
+    "item.prcessit.ruby_boots": "Ruby Boots",
+
+    "itemGroup.processit": "Process It Items"
+}
