@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "processit:item/ruby_helmet"
+        "layer0": "earthtojava:item/ruby"
     }
 }

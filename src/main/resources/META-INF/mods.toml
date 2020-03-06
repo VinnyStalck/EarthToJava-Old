@@ -1,28 +1,27 @@
 modLoader="javafml" 
 loaderVersion="[31,)" 
-issueTrackerURL="" 
+issueTrackerURL="https://github.com/VinnyStalck/EarthToJava/issues" 
 
 [[mods]] 
     modId="earthtojava" 
-    version="${jarVersion}-${version}" 
+    version="Pre-Alpha v1.0.0"
     displayName="Earth to Java" 
-    updateJSONURL="" 
-    displayURL="" 
+    displayURL="https://github.com/VinnyStalck/EarthToJava" 
     logoFile="" 
     credits="" 
     authors="VinnyStalck" 
     description='''
-    Brings to Minecraft Java Editions, some of the features from Minecraft Earth mobile game.
+    Brings some of the features from Minecraft Earth mobile game to Minecraft Java Edition.
     '''
-[[dependencies.earth]] 
+[[dependencies.earthtojava]] 
     modId="forge" 
     mandatory=true
     versionRange="[31,)" 
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.earth]]
-    modId="minecraft"
+[[dependencies.earthtojava]]
+    modId="minecraft" 
     mandatory=true
     versionRange="[1.15.2]"
     ordering="NONE"

@@ -12,16 +12,16 @@ import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod("earthtojava")
-/**
- * EarthToJava
- */
 public class EarthToJava {
     private static final Logger LOGGER = LogManager.getLogger();
+    public static final String MOD_ID = "earthtojava";
+    public static EarthToJava instance;
 
     public EarthToJava() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
+        instance = this;
         MinecraftForge.EVENT_BUS.register(this);
     }
 
