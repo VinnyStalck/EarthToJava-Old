@@ -19,7 +19,7 @@ public class EarthToJava {
 
     public EarthToJava() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
 
         instance = this;
         MinecraftForge.EVENT_BUS.register(this);
@@ -29,7 +29,7 @@ public class EarthToJava {
         LOGGER.info("Setup Method Registred");
     }
     
-    private void doClientStuff(final FMLClientSetupEvent event) {
+    private void clientSetup(final FMLClientSetupEvent event) {
         LOGGER.info("Client Setup Method Registred");
     }
     
