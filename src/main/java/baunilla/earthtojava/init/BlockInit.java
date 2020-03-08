@@ -2,6 +2,7 @@ package baunilla.earthtojava.init;
 
 import baunilla.earthtojava.EarthToJava;
 import net.minecraft.block.Block;
+import net.minecraft.block.OreBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
@@ -19,14 +20,17 @@ import net.minecraftforge.registries.ObjectHolder;
 @Mod.EventBusSubscriber(modid = EarthToJava.MOD_ID, bus = Bus.MOD) 
 public class BlockInit {
     public static final Block ruby_block = null;
+    public static final Block ruby_ore = null;
     
     @SubscribeEvent
     public static void registerBlocks(final RegistryEvent.Register<Block> event) {
         event.getRegistry().register(new Block(Block.Properties.create(Material.IRON, MaterialColor.RED).hardnessAndResistance(5.0f, 6.0f).sound(SoundType.METAL)).setRegistryName("ruby_block"));
+        event.getRegistry().register(new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0f)).setRegistryName("ruby_ore"));
     }
-
+    
     @SubscribeEvent
     public static void registerItemBlocks(final RegistryEvent.Register<Item> event) {
         event.getRegistry().register(new BlockItem(ruby_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).rarity(Rarity.UNCOMMON)).setRegistryName("ruby_block"));
+        event.getRegistry().register(new BlockItem(ruby_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).rarity(Rarity.UNCOMMON)).setRegistryName("ruby_ore"));
     }
 }
