@@ -1,5 +1,7 @@
 {
     "item.earthtojava.ruby": "Ruby",
     "block.earthtojava.ruby_block": "Block of Ruby",
-    "block.earthtojava.ruby_ore": "Ruby Ore"
+    "block.earthtojava.ruby_ore": "Ruby Ore",
+    
+    "block.earthtojava.buttercup": "Buttercup"
 }
