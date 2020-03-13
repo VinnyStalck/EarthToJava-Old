@@ -19,12 +19,4 @@ public class BlockInit {
     public static final RegistryObject<Block> RUBY_ORE = BLOCKS.register("ruby_ore", () -> new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0f)));
     
     public static final RegistryObject<Block> BUTTERCUP = BLOCKS.register("buttercup", () -> new FlowerBlock(Effects.SATURATION, 7, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().hardnessAndResistance(0.0f).sound(SoundType.PLANT)));
-
-    // BlockItems
-    /*
-    new BlockItem(ruby_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).rarity(Rarity.UNCOMMON)).setRegistryName("ruby_block");
-    new BlockItem(ruby_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).rarity(Rarity.UNCOMMON)).setRegistryName("ruby_ore");
-
-    new BlockItem(buttercup, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName("buttercup");
-    */
 }
