@@ -16,7 +16,7 @@ public class OreGen {
         // Generate Ruby Ore
         for (Biome biome : ForgeRegistries.BIOMES) {
             if (biome == Biomes.MUSHROOM_FIELDS || biome == Biomes.MUSHROOM_FIELD_SHORE) {
-                ConfiguredPlacement customConfig = Placement.COUNT_RANGE
+                ConfiguredPlacement<?> customConfig = Placement.COUNT_RANGE
                     .configure(new CountRangeConfig(5, 4, 4, 16));
                 biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE
                     .withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockInit.RUBY_ORE.get().getDefaultState(), 5))
